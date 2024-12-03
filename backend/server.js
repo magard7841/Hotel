@@ -21,6 +21,7 @@ app.use(morgan("dev"));
 //URL localhost
 app.use("/api/test", require("./routes/testRoutes"));
 app.use("/api/auth", require("./routes/authRoutes"));
+app.use("/api/user", require("./routes/userRoutes"));
 app.get("/", (req, res) => {
   return res.status(200).send("<h1>Welcome to food Server</h1>");
 });
